@@ -1,0 +1,74 @@
+name: solar_spot
+description: A new Flutter project.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.0
+  lint: ^1.0.0
+  provider: ^4.3.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+# The following section is specific to Flutter.
+flutter:
+
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/background_images/
+    - assets/icons/
+    - assets/logos/
+    - assets/illustrations/
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware.
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+  fonts:
+    - family: Nunito_Sans
+      fonts:
+        - asset: assets/fonts/Nunito_Sans/NunitoSans-ExtraLight.ttf
+          weight: 200
+        - asset: assets/fonts/Nunito_Sans/NunitoSans-ExtraLightItalic.ttf
+          weight: 200
+          style: italic
+        - asset: assets/fonts/Nunito_Sans/NunitoSans-Light.ttf
+          weight: 300
+        - asset: assets/fonts/Nunito_Sans/NunitoSans-LightItalic.ttf
+          weight: 300
+          style: italic
+        - asset: assets/fonts/Nunito_Sans/NunitoSans-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Nunito_Sans/NunitoSans-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Nunito_Sans/NunitoSans-SemiBoldItalic.ttf
+          weight: 600
+          style: italic
+        - asset: assets/fonts/Nunito_Sans/NunitoSans-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Nunito_Sans/NunitoSans-SemiBoldItalic.ttf
+          weight: 700
+          style: italic
+        - asset: assets/fonts/Nunito_Sans/NunitoSans-ExtraBold.ttf
+          weight: 800
+        - asset: assets/fonts/Nunito_Sans/NunitoSans-ExtraBoldItalic.ttf
+          weight: 800
+          style: italic
+        - asset: assets/fonts/Nunito_Sans/NunitoSans-Black.ttf
+          weight: 900
+        - asset: assets/fonts/Nunito_Sans/NunitoSans-BlackItalic.ttf
+          weight: 900
+          style: italic
