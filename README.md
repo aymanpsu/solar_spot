@@ -1,6 +1,6 @@
 # solar_spot
 
-![Main Functionality](https://drive.google.com/file/d/1VNd1I3C1lmQ7Xk2EAhjs_ARqGS2QpmfP/view?usp=sharing)
+![Main Functionality](https://i.ibb.co/372f1Gm/Intro.png)
 
 
 ## Getting Started
