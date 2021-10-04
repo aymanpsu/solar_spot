@@ -1,6 +1,7 @@
 # solar_spot
 
-A new Flutter project.
+![Main Functionality](https://i.ibb.co/372f1Gm/Intro.png)
+
 
 ## Getting Started
 
