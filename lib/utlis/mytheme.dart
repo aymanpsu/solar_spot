@@ -7,7 +7,7 @@ class MyTheme {
     // Colors theme config
     primaryColor: Mycolors.primaryColor,
     visualDensity: VisualDensity.adaptivePlatformDensity,
-    accentColor: Mycolors.primaryColor,
+    // colorScheme: ColorScheme.light(),
     fontFamily: 'Nunito_Sans',
     // Text theme config
     textTheme: const TextTheme(

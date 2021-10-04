@@ -41,20 +41,20 @@ class _BottomNavState extends State<BottomNav> {
         },
         items: const [
           BottomNavigationBarItem(
-            icon:  Icon(Icons.home),
-            label: "Home"
+            icon: Icon(Icons.home),
+            label: "Home",
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.calculate),
-            label: "Calculator"
+            label: "Calculator",
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.perm_device_information_rounded),
-            label: "Devices"
+            label: "Devices",
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.settings),
-            label: "Settings"
+            label: "Settings",
           ),
         ],
       ),

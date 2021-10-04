@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import '../widgets/create_estimation_form.dart';
 
 class CreateEstimation extends StatelessWidget {
@@ -20,7 +21,13 @@ class CreateEstimation extends StatelessWidget {
         ),
         backgroundColor: Colors.transparent,
         elevation: 0.0,
-        brightness: Brightness.light,
+        systemOverlayStyle: const SystemUiOverlayStyle(
+          statusBarColor: Colors.black,
+          statusBarBrightness: Brightness.light,
+          statusBarIconBrightness: Brightness.light,
+          systemNavigationBarDividerColor: Colors.white,
+          systemStatusBarContrastEnforced: true,
+        ),
         centerTitle: true,
       ),
       body: Padding(

@@ -5,9 +5,9 @@ enum InputType { text, dropdown, map, datepicker, datetimepicker }
 
 class Input extends StatelessWidget {
   const Input({
-    @required this.lebal,
-    @required this.placholder,
-    @required this.type,
+    required this.lebal,
+    required this.placholder,
+    required this.type,
     this.controller,
     this.postIcon,
   });
@@ -16,8 +16,8 @@ class Input extends StatelessWidget {
   final String lebal;
   final String placholder;
   final InputType type;
-  final TextEditingController controller;
-  final Icon postIcon;
+  final TextEditingController? controller;
+  final Icon? postIcon;
 
   @override
   Widget build(BuildContext context) {

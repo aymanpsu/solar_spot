@@ -26,7 +26,7 @@ class EmptyStateHome extends StatelessWidget {
               textAlign: TextAlign.center,
             ),
           ),
-          RaisedButton(
+          ElevatedButton(
             onPressed: () => {
               Navigator.push(
                 context,
@@ -37,12 +37,17 @@ class EmptyStateHome extends StatelessWidget {
                 ),
               )
             },
-            color: Theme.of(context).primaryColor,
-            textColor: Colors.white,
-            padding: const EdgeInsets.symmetric(
-              horizontal: 44,
-              vertical: 10,
+            style: ButtonStyle(
+              backgroundColor:
+                  MaterialStateProperty.all(Theme.of(context).primaryColor),
+              padding: MaterialStateProperty.all(
+                const EdgeInsets.symmetric(
+                  horizontal: 44,
+                  vertical: 10,
+                ),
+              ),
             ),
+            // textColor: Colors.white,
             child: const Text('Start'),
           )
         ],

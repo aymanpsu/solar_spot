@@ -14,25 +14,32 @@ String estimationToJson(EfficiencyEstimation data) {
 enum TimeFrame { monthly, daily, hourly }
 
 class EfficiencyEstimation {
-  String name;
-  double latitude;
-  double longitude;
-  TimeFrame type;
-  String starFrom;
-  String endAt;
-  List<String> dataIncluded;
+  String? name;
+  double? latitude;
+  double? longitude;
+  TimeFrame? type;
+  String? starFrom;
+  String? endAt;
+  List<String>? dataIncluded;
 
-  EfficiencyEstimation(this.name, this.latitude, this.longitude, this.type,
-      this.starFrom, this.endAt, this.dataIncluded);
+  EfficiencyEstimation(
+    this.name,
+    this.latitude,
+    this.longitude,
+    this.type,
+    this.starFrom,
+    this.endAt,
+    this.dataIncluded,
+  );
 
   EfficiencyEstimation.fromJson(Map<String, dynamic> json)
-      : name = json['name'] as String,
-        latitude = json['latitude'] as double,
-        longitude = json['longitude'] as double,
-        type = json['type'] as TimeFrame,
-        starFrom = json['starFrom'] as String,
-        endAt = json['endAt'] as String,
-        dataIncluded = json['dataIncluded'] as List<String>;
+      : name = json['name'] as String?,
+        latitude = json['latitude'] as double?,
+        longitude = json['longitude'] as double?,
+        type = json['type'] as TimeFrame?,
+        starFrom = json['starFrom'] as String?,
+        endAt = json['endAt'] as String?,
+        dataIncluded = json['dataIncluded'] as List<String>?;
 
   Map<String, dynamic> toJson() => {
         "name": name,

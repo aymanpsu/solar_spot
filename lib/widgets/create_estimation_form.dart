@@ -14,7 +14,7 @@ class _CreateEstimationFromState extends State<CreateEstimationFrom> {
   void initState() {
     super.initState();
   }
-  
+
   // bool _isLoading = false;
   // PostService _postService = PostService();
   final _formKey = GlobalKey<FormState>();
@@ -57,38 +57,41 @@ class _CreateEstimationFromState extends State<CreateEstimationFrom> {
               size: 15.00,
             ),
           ),
-          Input(
+          const Input(
             lebal: 'Timeframe type',
             placholder: 'Click to select',
             type: InputType.text,
-            postIcon: const Icon(Icons.keyboard_arrow_right),
+            postIcon: Icon(Icons.keyboard_arrow_right),
           ),
-          Input(
+          const Input(
             lebal: 'Start from',
             placholder: 'Click to select',
             type: InputType.text,
-            postIcon: const Icon(
+            postIcon: Icon(
               Icons.date_range,
               size: 15.00,
             ),
           ),
-          Input(
+          const Input(
             lebal: 'End at',
             placholder: 'Click to select',
             type: InputType.text,
-            postIcon: const Icon(
+            postIcon: Icon(
               Icons.date_range,
               size: 15.00,
             ),
           ),
-          ListOfFilters(),
+          const ListOfFilters(),
           Padding(
             padding: const EdgeInsets.only(top: 25.00),
             child: SizedBox(
               width: double.infinity,
-              child: RaisedButton(
-                color: Theme.of(context).primaryColor,
-                textColor: Colors.white,
+              child: ElevatedButton(
+                style: ButtonStyle(
+                  backgroundColor:
+                      MaterialStateProperty.all(Theme.of(context).primaryColor),
+                  // textColor: Colors.white,
+                ),
                 onPressed: () {},
                 child: const Text("Save"),
               ),

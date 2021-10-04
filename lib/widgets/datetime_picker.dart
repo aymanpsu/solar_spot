@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class DateTimePicker extends StatefulWidget {
-  DateTimePicker();
+  const DateTimePicker();
 
   @override
   _DateTimePickerState createState() => _DateTimePickerState();
